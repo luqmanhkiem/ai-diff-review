@@ -1,0 +1,13 @@
+# Render blueprint. Push to GitHub, then in Render: New > Blueprint > pick this repo.
+# Set BEARER_TOKEN (and optionally LLM_API_KEY) in the dashboard as secrets.
+services:
+  - type: web
+    name: ai-diff-review
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: BEARER_TOKEN
+        sync: false          # set a strong opaque token in the dashboard
+      - key: LLM_API_KEY
+        sync: false          # optional: a free Gemini/Groq key
