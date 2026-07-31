@@ -44,7 +44,7 @@ limiting, and graceful `llm` failure.
 | `BEARER_TOKEN` | `dev-local-token` | token clients must present on `/v1/*` |
 | `LLM_API_KEY` | *(empty)* | enables the real `llm` provider; unset ⇒ graceful failure |
 | `LLM_BASE_URL` | Gemini v1beta | model endpoint |
-| `LLM_MODEL` | `gemini-1.5-flash` | model name |
+| `LLM_MODEL` | `gemini-2.0-flash` | model name |
 | `LLM_TIMEOUT_SECONDS` | `20` | per-call timeout |
 
 The `llm` provider targets Google Gemini's generateContent API by default (a free

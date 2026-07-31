@@ -29,7 +29,7 @@ PROVIDERS = ["mock", "llm"]
 # unreachable, the llm path fails the job gracefully instead of crashing.
 LLM_API_KEY = os.getenv("LLM_API_KEY", "")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://generativelanguage.googleapis.com/v1beta")
-LLM_MODEL = os.getenv("LLM_MODEL", "gemini-1.5-flash")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.0-flash")
 LLM_TIMEOUT_SECONDS = float(os.getenv("LLM_TIMEOUT_SECONDS", "20"))
 
 
