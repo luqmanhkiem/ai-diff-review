@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .env
 .pytest_cache/
+
+# Personal interview-prep material — not part of the deliverable
+DEMO.md
+INTERVIEW-PREP.pdf
