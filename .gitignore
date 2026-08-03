@@ -7,3 +7,4 @@ __pycache__/
 # Personal interview-prep material — not part of the deliverable
 DEMO.md
 INTERVIEW-PREP.pdf
+.DS_Store
