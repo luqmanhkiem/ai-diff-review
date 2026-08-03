@@ -49,7 +49,10 @@ into the JSON parser.
 
 ## How I verified the cross-cutting behaviours
 
-`pytest tests/` (29 tests, runs in <1s) plus a live HTTP smoke run. Specifically:
+Two layers: `pytest tests/` (29 unit/integration tests, runs in <1s) for the
+internal logic, and `scripts/smoke_test.py <url> <token>` — 40 checks over real
+HTTP against the running service, which is how I verified the live deployment
+before submitting. Specifically:
 
 - **Chunking** (`test_chunking.py`): the same multi-file diff is scanned with a tiny
   chunk budget and with the real 64 KiB budget; findings + ordering are asserted
